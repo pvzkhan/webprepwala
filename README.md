@@ -51,7 +51,11 @@ This is a Django-based website for WebPrepWala. Follow the instructions below to
    python manage.py runserver
    ```
    - The website will be available at `http://127.0.0.1:8000/`
-   - If deploying to Render.com or another production server, you do not need to run the development server with `python manage.py runserver`. Instead, the platform will use the `Procfile` to start the app with Gunicorn automatically.
+   - If deploying to Render.com or another production server, set the start command to:
+     ```sh
+     gunicorn webprep.wsgi:application --bind 0.0.0.0:$PORT
+     ```
+     Or ensure your Render service uses the included `Procfile` or `start.sh` script.
    - For local development, continue to use:
      ```sh
      python manage.py runserver
