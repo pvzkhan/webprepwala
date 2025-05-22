@@ -127,7 +127,7 @@ h4, h5, h6 {
     padding-right: 0.7rem !important;
   }
   .navbar-brand {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
   .footer {
     font-size: 0.95rem;
@@ -136,17 +136,27 @@ h4, h5, h6 {
     margin-bottom: 1.2rem !important;
   }
   .btn {
-    font-size: 1rem !important;
+    font-size: 1.05rem !important;
     padding: 0.5rem 1.1rem !important;
   }
-  h1, h2, h3 {
-    font-size: 1.3rem !important;
+  h1 {
+    font-size: 2rem !important;
   }
-  .form-control, .form-select {
-    font-size: 1rem !important;
-    padding: 0.5rem 0.9rem !important;
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  h3 {
+    font-size: 1.2rem !important;
   }
   .mb-4, .my-4 {
     margin-bottom: 1.2rem !important;
+  }
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .col-12, .col-md-7, .col-md-8, .col-md-6, .col-lg-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
