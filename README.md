@@ -65,6 +65,21 @@ This is a Django-based website for WebPrepWala. Follow the instructions below to
   python manage.py collectstatic
   ```
 
+## Deployment on Render.com
+
+To deploy on Render.com:
+1. Make sure you have a `Procfile` in your project root with the following content:
+   ```
+   web: gunicorn webprep.wsgi:application --bind 0.0.0.0:$PORT
+   ```
+2. Set `ALLOWED_HOSTS` in `webprep/settings.py` to include your Render domain (e.g., `webprepwala.onrender.com`).
+3. Render will automatically set the `PORT` environment variable. The above `Procfile` ensures Gunicorn binds to the correct port.
+4. For static files, make sure to run:
+   ```sh
+   python manage.py collectstatic
+   ```
+5. For more details, see: https://render.com/docs/web-services#port-binding
+
 ## Notes
 - Update `webprep/settings.py` for production (e.g., `ALLOWED_HOSTS`, `DEBUG`, database settings).
 - For deployment, use a production-ready server (e.g., Gunicorn, Apache, Nginx).
