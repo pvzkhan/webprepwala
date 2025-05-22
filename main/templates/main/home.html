@@ -1,0 +1,61 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<div class="hero-section py-5" style="background:linear-gradient(90deg,#f8f9fa 60%,#e3f0ff 100%); border-radius:1.5rem;">
+  <div class="container d-flex flex-column align-items-center justify-content-center text-center">
+    <h1 class="display-5 fw-bold mb-2" style="color:#0d6efd;">Build Your Web Success with</h1>
+    <span class="webprepwala-3d mx-auto">
+      <span class="web-3d">WEB</span><span class="prepwala-3d">PREPWALA</span>
+    </span>
+    <div style="margin-top:0.5rem; margin-bottom:1.5rem;">
+      <span style="font-size:1.25rem; color:#28a745; font-style:italic; font-weight:700;">(Your Partner for Web Success)</span>
+    </div>
+    <p class="lead mb-4" style="font-size:1.7rem; color:#0d6efd; font-weight:700;">From design to hosting, we help your business shine online.</p>
+    <div class="d-flex gap-3 flex-wrap justify-content-center mb-4">
+      <a href="/web-design/" class="btn btn-primary btn-lg fw-bold">Learn More About Web Design</a>
+      <a href="/portfolio/" class="btn btn-primary btn-lg fw-bold">View Our Work</a>
+      <a href="/contact/" class="btn btn-primary btn-lg fw-bold">Get a Quote</a>
+    </div>
+    <div class="device-mockup bg-white rounded shadow p-3" style="max-width:400px;">
+      <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Web Design Example" class="img-fluid rounded" style="border:8px solid #e3f0ff; box-shadow:0 4px 24px rgba(0,0,0,0.08);">
+    </div>
+  </div>
+</div>
+<style>
+.webprepwala-3d {
+  display: inline-block;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.web-3d {
+  color: #2962FF;
+  text-shadow:
+    3px 3px 0 #fff,
+    6px 6px 0 #2962FF,
+    10px 10px 24px rgba(41,98,255,0.18);
+  -webkit-text-stroke: 1px #0d47a1;
+  margin-right: 0.2em;
+}
+.prepwala-3d {
+  color: #9C27B0;
+  text-shadow:
+    3px 3px 0 #fff,
+    6px 6px 0 #9C27B0,
+    10px 10px 24px rgba(156,39,176,0.18);
+  -webkit-text-stroke: 1px #6a0080;
+}
+.web-3d:hover {
+  text-shadow:
+    3px 3px 0 #ffd700,
+    6px 6px 0 #2962FF,
+    12px 12px 32px rgba(41,98,255,0.35);
+}
+.prepwala-3d:hover {
+  text-shadow:
+    3px 3px 0 #ffd700,
+    6px 6px 0 #9C27B0,
+    12px 12px 32px rgba(156,39,176,0.35);
+}
+</style>
+{% endblock %}
